@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1421</width>
+    <height>1075</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>40</y>
+      <width>1201</width>
+      <height>1041</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>Employee info</string>
+     </attribute>
+     <widget class="QGroupBox" name="groupBox">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>1171</width>
+        <height>1011</height>
+       </rect>
+      </property>
+      <property name="title">
+       <string/>
+      </property>
+      <widget class="QSplitter" name="splitter">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>120</y>
+         <width>361</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout_2">
+         <item>
+          <widget class="QLabel" name="label_5">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>First Name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_4">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Department</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_3">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Fit Testing</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget">
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <widget class="QLineEdit" name="First_Name_input"/>
+         </item>
+         <item>
+          <widget class="QComboBox" name="Department_combo">
+           <item>
+            <property name="text">
+             <string>Administration</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Behavioral Health</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Dental</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Environmental Services</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Facilities</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Finance</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Health Promotion</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Information Technology</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Laboratory</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Medical Records</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Office of Environmental Health</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Optometry</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Patient Business Office</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Pharmacy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Physical Therapy</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Primary Care</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Property and Supply</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Publich Health</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Purchased Referred Care</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Quality</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Security</string>
+            </property>
+           </item>
+           <item>
+            <property name="text">
+             <string>Social Services</string>
+            </property>
+           </item>
+          </widget>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="Fit_testing_checkbox">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Yes</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QTableWidget" name="tableWidget">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>530</y>
+         <width>951</width>
+         <height>431</height>
+        </rect>
+       </property>
+       <property name="sizeAdjustPolicy">
+        <enum>QAbstractScrollArea::AdjustToContents</enum>
+       </property>
+       <attribute name="horizontalHeaderMinimumSectionSize">
+        <number>55</number>
+       </attribute>
+       <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+        <bool>true</bool>
+       </attribute>
+       <column>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Department</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Start Date</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Annual Training Complete</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Fit Testing</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Audit</string>
+        </property>
+       </column>
+      </widget>
+      <widget class="QDateEdit" name="Fit_testing_date">
+       <property name="geometry">
+        <rect>
+         <x>200</x>
+         <y>360</y>
+         <width>181</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="date">
+        <date>
+         <year>2021</year>
+         <month>2</month>
+         <day>1</day>
+        </date>
+       </property>
+      </widget>
+      <widget class="QDateEdit" name="PPE_audit_date">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>360</y>
+         <width>231</width>
+         <height>22</height>
+        </rect>
+       </property>
+       <property name="calendarPopup">
+        <bool>true</bool>
+       </property>
+       <property name="date">
+        <date>
+         <year>2021</year>
+         <month>2</month>
+         <day>1</day>
+        </date>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>360</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Fit Testing Date</string>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_8">
+       <property name="geometry">
+        <rect>
+         <x>410</x>
+         <y>360</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>PPE Audit Date</string>
+       </property>
+      </widget>
+      <widget class="QSplitter" name="splitter_2">
+       <property name="geometry">
+        <rect>
+         <x>350</x>
+         <y>20</y>
+         <width>230</width>
+         <height>28</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QLineEdit" name="Search_input"/>
+       <widget class="QPushButton" name="Search_btn">
+        <property name="font">
+         <font>
+          <pointsize>11</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Search</string>
+        </property>
+       </widget>
+      </widget>
+      <widget class="QSplitter" name="splitter_3">
+       <property name="geometry">
+        <rect>
+         <x>400</x>
+         <y>120</y>
+         <width>421</width>
+         <height>231</height>
+        </rect>
+       </property>
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <widget class="QWidget" name="verticalLayoutWidget_3">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <widget class="QLabel" name="label_6">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Last Name</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_7">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Start Date</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label_9">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>PPE Audit</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QLabel" name="label">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Annual Complete</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+       <widget class="QWidget" name="layoutWidget_3">
+        <layout class="QVBoxLayout" name="verticalLayout_5">
+         <item>
+          <widget class="QLineEdit" name="Last_name_input"/>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="Start_Date"/>
+         </item>
+         <item>
+          <widget class="QCheckBox" name="PPE_Audit_checkbox">
+           <property name="font">
+            <font>
+             <pointsize>14</pointsize>
+            </font>
+           </property>
+           <property name="text">
+            <string>Yes</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QDateEdit" name="Annual_complete_date">
+           <property name="calendarPopup">
+            <bool>true</bool>
+           </property>
+           <property name="date">
+            <date>
+             <year>2021</year>
+             <month>2</month>
+             <day>1</day>
+            </date>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </widget>
+      <widget class="QLabel" name="label_10">
+       <property name="geometry">
+        <rect>
+         <x>20</x>
+         <y>410</y>
+         <width>171</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Model #</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit">
+       <property name="geometry">
+        <rect>
+         <x>190</x>
+         <y>410</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="lineEdit_2">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>410</y>
+         <width>191</width>
+         <height>31</height>
+        </rect>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="Save_btn">
+       <property name="geometry">
+        <rect>
+         <x>420</x>
+         <y>480</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Save</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="pushButton">
+       <property name="geometry">
+        <rect>
+         <x>572</x>
+         <y>480</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Load</string>
+       </property>
+      </widget>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>Reports</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>test</string>
+     </attribute>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1421</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionSave"/>
+    <addaction name="separator"/>
+    <addaction name="actionExit"/>
+   </widget>
+   <widget class="QMenu" name="menuEdit">
+    <property name="title">
+     <string>Edit</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuEdit"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionSave">
+   <property name="text">
+    <string>Save</string>
+   </property>
+  </action>
+  <action name="actionExit">
+   <property name="text">
+    <string>Exit</string>
+   </property>
+   <property name="statusTip">
+    <string>Click to exit application</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>actionExit</sender>
+   <signal>triggered()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>-1</x>
+     <y>-1</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>512</x>
+     <y>403</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>Fit_testing_checkbox</sender>
+   <signal>clicked()</signal>
+   <receiver>Fit_testing_date</receiver>
+   <slot>show()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>308</x>
+     <y>369</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>312</x>
+     <y>441</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
