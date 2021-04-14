@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1421</width>
-    <height>1075</height>
+    <width>1540</width>
+    <height>1198</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -43,6 +43,9 @@
        <string/>
       </property>
       <widget class="QSplitter" name="splitter">
+       <property name="enabled">
+        <bool>true</bool>
+       </property>
        <property name="geometry">
         <rect>
          <x>20</x>
@@ -51,8 +54,20 @@
          <height>231</height>
         </rect>
        </property>
+       <property name="sizePolicy">
+        <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+         <horstretch>0</horstretch>
+         <verstretch>0</verstretch>
+        </sizepolicy>
+       </property>
        <property name="orientation">
         <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="opaqueResize">
+        <bool>true</bool>
+       </property>
+       <property name="childrenCollapsible">
+        <bool>false</bool>
        </property>
        <widget class="QWidget" name="verticalLayoutWidget">
         <layout class="QVBoxLayout" name="verticalLayout_2">
@@ -231,9 +246,9 @@
       <widget class="QTableWidget" name="tableWidget">
        <property name="geometry">
         <rect>
-         <x>20</x>
-         <y>530</y>
-         <width>951</width>
+         <x>40</x>
+         <y>540</y>
+         <width>1031</width>
          <height>431</height>
         </rect>
        </property>
@@ -249,6 +264,16 @@
        <column>
         <property name="text">
          <string>Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>First Name</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Last Name</string>
         </property>
        </column>
        <column>
@@ -274,6 +299,11 @@
        <column>
         <property name="text">
          <string>Audit</string>
+        </property>
+       </column>
+       <column>
+        <property name="text">
+         <string>Model#</string>
         </property>
        </column>
       </widget>
@@ -519,7 +549,7 @@
       <widget class="QPushButton" name="Save_btn">
        <property name="geometry">
         <rect>
-         <x>420</x>
+         <x>262</x>
          <y>480</y>
          <width>101</width>
          <height>31</height>
@@ -534,10 +564,10 @@
         <string>Save</string>
        </property>
       </widget>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="load_btn">
        <property name="geometry">
         <rect>
-         <x>572</x>
+         <x>372</x>
          <y>480</y>
          <width>101</width>
          <height>31</height>
@@ -550,6 +580,42 @@
        </property>
        <property name="text">
         <string>Load</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="delete_btn">
+       <property name="geometry">
+        <rect>
+         <x>482</x>
+         <y>480</y>
+         <width>101</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Delete</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="edit_btn">
+       <property name="geometry">
+        <rect>
+         <x>590</x>
+         <y>480</y>
+         <width>100</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="font">
+        <font>
+         <pointsize>14</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>Edit</string>
        </property>
       </widget>
      </widget>
@@ -571,7 +637,7 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1421</width>
+     <width>1540</width>
      <height>26</height>
     </rect>
    </property>
@@ -580,6 +646,7 @@
      <string>File</string>
     </property>
     <addaction name="actionSave"/>
+    <addaction name="actionExport_to_Excel"/>
     <addaction name="separator"/>
     <addaction name="actionExit"/>
    </widget>
@@ -603,6 +670,11 @@
    </property>
    <property name="statusTip">
     <string>Click to exit application</string>
+   </property>
+  </action>
+  <action name="actionExport_to_Excel">
+   <property name="text">
+    <string>Export to Excel</string>
    </property>
   </action>
  </widget>
